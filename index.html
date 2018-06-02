@@ -1,0 +1,52 @@
+<DOCTYPE! html>
+
+<html>
+	<!-- Para adiconar caracteres. -->
+	<head> <meta charset="UTF-8"> </head>
+	<body>
+		<!-- Ficheiro javascript com a função-->
+		<script src="javascript.js"></script>
+		<center>
+		<form name=game>
+		<table border=0>
+		<td>
+		<table border=1>
+		<!-- Tabuleiro de jogo-->
+		<tr>
+		<td><a href="javascript:yourChoice('A')"><img src="branco.jpg" border=0 height=100 width=100 name=A alt="Topo esquerdo"></a></td>
+		<td><a href="javascript:yourChoice('B')"><img src="branco.jpg" border=0 height=100 width=100 name=B alt="Topo centro"></a></td>
+		<td><a href="javascript:yourChoice('C')"><img src="branco.jpg" border=0 height=100 width=100 name=C alt="Topo direito"></a></td>
+		</tr>
+		<tr>
+		<td><a href="javascript:yourChoice('D')"><img src="branco.jpg" border=0 height=100 width=100 name=D alt="Centro esquerdo"></a></td>
+		<td><a href="javascript:yourChoice('E')"><img src="branco.jpg" border=0 height=100 width=100 name=E alt="Centro centro"></a></td>
+		<td><a href="javascript:yourChoice('F')"><img src="branco.jpg" border=0 height=100 width=100 name=F alt="Centro direito"></a></td>
+		</tr>
+		<tr>
+		<td><a href="javascript:yourChoice('G')"><img src="branco.jpg" border=0 height=100 width=100 name=G alt="Baixo esquerdo"></a></td>
+		<td><a href="javascript:yourChoice('H')"><img src="branco.jpg" border=0 height=100 width=100 name=H alt="Baixo centro"></a></td>
+		<td><a href="javascript:yourChoice('I')"><img src="branco.jpg" border=0 height=100 width=100 name=I alt="Baixo direito"></a></td>
+		</tr>
+		</table>
+		</td>
+		<td>
+		<table>
+		<!-- Tabela de Resultados -->
+		<tr><td><input type=text size=5 name=you></td><td>Jogador</td></tr>
+		<tr><td><input type=text size=5 name=computer></td><td>Computador</td></tr>
+		<tr><td><input type=text size=5 name=ties></td><td>Empates</td></tr>
+		</table>
+		</td>
+		</table>
+		<!-- Botões do jogo -->
+		<input type=button value="Mudar Ícone" onClick="mudarJogador();">
+		&nbsp;&nbsp;
+		<input type=button value="Novo Jogo" onClick="jogarOutraVez();">
+		&nbsp;&nbsp;
+		<input type=button value="Ajuda" onClick="ajuda();">
+		&nbsp;&nbsp;
+		<input type=button value="Desistir" onClick="quitGame();">
+		</form>
+		</center>
+	</body>
+</html>
